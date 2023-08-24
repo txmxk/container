@@ -2,7 +2,8 @@ FROM registry.access.redhat.com/ubi8/ubi:8.0 # Base Image
 MAINTAINER Manoj KC
 
 # Document for apache
-ENV DOCROOT=/var/www/html  #Environment Variables for this container image
+# Environment Variables for this container image
+ENV DOCROOT=/var/www/html  
 
 RUN yum install -y --nodocs --disableplugin=subscription-manager httpd
 RUN yum clean all --disableplugin=subscription-manager -y 
