@@ -1,4 +1,5 @@
-FROM registry.access.redhat.com/ubi8/ubi:8.0 # Base Image
+# Base Image
+FROM registry.access.redhat.com/ubi8/ubi:8.0 
 MAINTAINER Manoj KC
 
 # Document for apache
