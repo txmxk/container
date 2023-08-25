@@ -1,13 +1,13 @@
 # Base Image
-FROM registry.access.redhat.com/ubi8/ubi:8.0 
+FROM registry.access.redhat.com/ubi8/ubi:8.0
 MAINTAINER Manoj KC
 
 # Document for apache
 # Environment Variables for this container image
-ENV DOCROOT=/var/www/html  
+ENV DOCROOT=/var/www/html
 
 RUN yum install -y --nodocs --disableplugin=subscription-manager httpd
-RUN yum clean all --disableplugin=subscription-manager -y 
+RUN yum clean all --disableplugin=subscription-manager -y && \
     echo "Hello from httpd-parent container " > ${DOCROOT}/index.html
 
 EXPOSE 80
