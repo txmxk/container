@@ -16,7 +16,8 @@ EXPOSE 80
 RUN rm -rf /run/httpd && mkdir /run/httpd
 
 #Run as the root user
-USER root  #Runs apache server process as root
+#Runs apache server process as root
+USER root
 
 #Launch httpd
 CMD /usr/sbin/httpd -DFOREGROUND
