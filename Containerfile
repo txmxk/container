@@ -1,4 +1,4 @@
-# Use this file to create parent image
+# Use this file to create PARENT image
 #----------------------------------------
 FROM registry.access.redhat.com/ubi8/ubi:8.0
 MAINTAINER devps
