@@ -1,3 +1,4 @@
+# Use this file for Practice
 # Base Image
 FROM quay.io/redhattraining/httpd-parent
 MAINTAINER Manoj KC
