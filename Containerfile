@@ -1,8 +1,8 @@
 FROM registry.access.redhat.com/ubi8/ubi:8.0
 MAINTAINER devopstantra
 
-RUN yum install -y --disableplugin=subscription-manager httpd && \
-RUN yum clean all --disableplugin=subscription-manager -y && \
+RUN yum install -y --disableplugin=subscription-manager httpd 
+RUN yum clean all --disableplugin=subscription-manager -y 
 RUN echo "Hello from the httpd-parent container!" > /var/www/html/index.html
 
 EXPOSE 80
