@@ -1,6 +1,7 @@
-# Use this file for Practice
+# Use this file to create CHILD image and to deploy app from this image
+#==========================================================================
 # Base Image
-FROM quay.io/redhattraining/httpd-parent
+FROM quay.io/unixmantra/testparent
 MAINTAINER Manoj KC
 
 # Environment Variables for this container image
