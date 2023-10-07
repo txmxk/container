@@ -7,8 +7,8 @@ MAINTAINER devopstantra
 ENV DOCROOT=/var/www/html
 
 RUN yum install -y --disableplugin=subscription-manager httpd && \
-RUN yum clean all --disableplugin=subscription-manager -y && \
-RUN echo "Hello from the httpd-parent container!" > ${DOCROOT}/index.html
+    yum clean all --disableplugin=subscription-manager -y && \
+    echo "Hello from the httpd-parent container!" > ${DOCROOT}/index.html
 
 # Allows child images to inject their own content into DocumentRoot
 ONBUILD COPY src/ ${DOCROOT}/
