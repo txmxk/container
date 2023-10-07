@@ -4,11 +4,10 @@ MAINTAINER Manoj KC
 
 # Document for apache
 # Environment Variables for this container image
-ENV DOCROOT=/var/www/html
 
 RUN yum install -y --nodocs --disableplugin=subscription-manager httpd
 RUN yum clean all --disableplugin=subscription-manager -y && \
-    echo "Hello from httpd-parent container " > ${DOCROOT}/index.html
+    echo "Hello from httpd-parent container " > /var/www/html/index.html
 
 EXPOSE 80
 
