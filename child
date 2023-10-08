@@ -1,7 +1,7 @@
 # Use this file to create CHILD image and to deploy app from this image
 #==========================================================================
 # Base Image
-FROM quay.io/unixmantra/testparent
+FROM quay.io/unixmantra/errorparent
 MAINTAINER Manoj KC
 
 LABEL io.openshift.expose-services="8080:http"
